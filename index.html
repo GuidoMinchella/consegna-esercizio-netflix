@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Netflix</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#"
+        ><img src="./assets/imgs/Netflix_Logo_RGB.png"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#shows">Serie TV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#movies">Film</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recent">Aggiunti di recente</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#list">Selezionati per te</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto text-light">
+          <i class="bi bi-search mx-2 my-auto"></i>
+          <span class="mx-2 my-auto"><a href ="__blank">Bambini</a></span>
+          <i class="bi bi-bell-fill mx-2 my-auto"></i>
+    <div class="profile-container">
+          <img
+            class="avatar mx-2 my-auto"
+            src="./assets/avatar.png"
+            alt="Avatar"
+            id="profile-avatar"
+          />
+  <i class="dropdown-arrow bi bi-caret-down-fill"></i>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <ul>
+                <li><a href="#">Profilo</a></li>
+                <li><a href="#">Impostazioni</a></li>
+                <li><a href="#">Esci</a></li>
+            </ul>
+        </div>
+    </div>
+        </ul>
+      </div>
+    </nav>
+    <main class="bg-dark text-light">
+        <div class="d-flex mb-4 w-100">
+          <h2 class="mr-5">Serie TV</h2>
+          <div class="dropdown" id="genre">
+            <button
+              class="btn bg-dark text-light border-light dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Generi
+            </button>
+            <div class="dropdown-menu bg-dark  border-light">
+              <a class="dropdown-item text-light" href="#">Azione</a>
+              <a class="dropdown-item text-light" href="#">Commedia</a>
+              <a class="dropdown-item text-light" href="#">Horror</a>
+            </div>
+          </div>
+        </div>
+<section class="movie-row mb-5">
+    <h3 class="mb-3">Di tendenza</h3>
+    <div class="movie-slider">
+        <button class="scroll-btn prev-btn">&lt;</button>
+       <div class="row no-gutters flex-nowrap movie-container"> 
+        <div class="col-2 mx-1 movie-card">
+            <div class="image-container">
+                <img class="movie-thumbnail" src="./assets/imgs/movies/1.png" alt="">
+                    <button class="play-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+            </div>
+            <div class="hover-overlay">
+                <div class="hover-content">
+                    <h4 class="movie-title">Unorthodox</h4>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="hover-actions">
+                        <i class="fa fa-plus" aria-hidden="true"> </i>
+                        <i class="fa fa-info" aria-hidden="true"> </i>
+                    </div>
+                    <div class="movie-desc">
+                        <h6 class="movie-desc">
+                        Unorthodox è una miniserie che racconta la storia di Esty, una giovane donna che fugge dalla sua comunità ebraica ultraortodossa a New York per cercare la libertà in Germania.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 mx-1 movie-card">
+            <div class="image-container">
+                <img class="movie-thumbnail" src="./assets/imgs/movies/2.png" alt="">
+                    <button class="play-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+            </div>
+            <div class="hover-overlay">
+                <div class="hover-content">
+                    <h4 class="movie-title">After Life</h4>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="hover-actions">
+                        <i class="fa fa-plus" aria-hidden="true"> </i>
+                        <i class="fa fa-info" aria-hidden="true"> </i>
+                    </div>
+                    <div class="movie-desc">
+                        <h6 class="movie-desc">
+                        After Life è una miniserie che racconta la storia di Esty, una giovane donna che fugge dalla sua comunità ebraica ultraortodossa a New York per cercare la libertà in Germania.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 mx-1 movie-card">
+            <div class="image-container">
+                <img class="movie-thumbnail" src="./assets/imgs/movies/3.png" alt="">
+                    <button class="play-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+            </div>
+            <div class="hover-overlay">
+                <div class="hover-content">
+                    <h4 class="movie-title">VISaVIS</h4>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="hover-actions">
+                        <i class="fa fa-plus" aria-hidden="true"> </i>
+                        <i class="fa fa-info" aria-hidden="true"> </i>
+                    </div>
+                    <div class="movie-desc">
+                        <h6 class="movie-desc">
+                        VISaVIS è una miniserie che racconta la storia di Esty, una giovane donna che fugge dalla sua comunità ebraica ultraortodossa a New York per cercare la libertà in Germania.
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="col-2 mx-1 movie-card">
+                <img src="./assets/imgs/movies/4.png" alt="">
+            </div>
+            <div class="col-2 mx-1 movie-card">
+                <img src="./assets/imgs/movies/5.png" alt="">
+            </div>
+            <div class="col-2 mx-1 movie-card">
+                <img src="./assets/imgs/movies/6.png" alt="">
+            </div>
+            <div class="col-2 mx-1 movie-card">
+                <img src="./assets/imgs/movies/7.png" alt="">
+                <div class="movie-shadow"></div>
+            </div>
+        </div>
+        <button class="scroll-btn next-btn">&gt;</button>
+    </div>
+</section>
+        <section class="movie-row mb-5">
+            <h3 class="mb-3">Commedie</h3>
+        <div class="movie-slider">
+        <button class="scroll-btn prev-btn">&lt;</button>
+            <div class="row no-gutters flex-nowrap movie-container">
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/8.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/9.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/10.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/11.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/12.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/13.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/14.png" alt="">
+                    <div class="movie-shadow"></div>
+                </div>
+        </div>
+        <button class="scroll-btn next-btn">&gt;</button>
+    </div>
+        </section>
+        <section class="movie-row mb-5">
+            <h3 class="mb-3">Drammi</h3>
+        <div class="movie-slider">
+        <button class="scroll-btn prev-btn">&lt;</button>
+            <div class="row no-gutters flex-nowrap movie-container">
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/15.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/16.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/17.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/7.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/14.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/18.png" alt="">
+                </div>
+                <div class="col-2 mx-1 movie-card">
+                    <img src="./assets/imgs/movies/4.png" alt="">
+                    <div class="movie-shadow"></div>
+                </div>
+        </div>
+        <button class="scroll-btn next-btn">&gt;</button>
+    </div>
+        </section>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+const avatar = document.getElementById("profile-avatar");
+const dropdownArrow = document.querySelector(".dropdown-arrow");
+const dropdownMenu = document.getElementById("dropdown-menu");
+
+function adjustDropdownPosition() {
+  const menuRect = dropdownMenu.getBoundingClientRect();
+  const viewportWidth = window.innerWidth;
+
+  if (menuRect.right > viewportWidth) {
+    dropdownMenu.style.right = "auto";
+    dropdownMenu.style.left = "0";
+  } else {
+    dropdownMenu.style.right = "0";
+    dropdownMenu.style.left = "auto";
+  }
+}
+
+function toggleDropdown() {
+  adjustDropdownPosition();
+  dropdownMenu.classList.toggle("show");
+}
+
+window.addEventListener("load", adjustDropdownPosition);
+
+[avatar, dropdownArrow].forEach((element) => {
+  element.addEventListener("click", toggleDropdown);
+});
+
+document.addEventListener("click", (event) => {
+  if (
+    !avatar.contains(event.target) &&
+    !dropdownArrow.contains(event.target) &&
+    !dropdownMenu.contains(event.target)
+  ) {
+    dropdownMenu.classList.remove("show");
+  }
+});
+const prevButtons = document.querySelectorAll('.prev-btn');
+const nextButtons = document.querySelectorAll('.next-btn');
+
+prevButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        const movieContainer = btn.nextElementSibling;
+        movieContainer.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+});
+
+nextButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        const movieContainer = btn.previousElementSibling;
+        movieContainer.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+});
+    </script>
+
+  </body>
+</html>
